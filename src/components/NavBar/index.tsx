@@ -6,13 +6,13 @@ import "./index.scss";
 const Navbar = () => {
   return (
     <div className="container">
-    <div className="navbar">
-      <div className=" navbar-content">
-        <NavLogo />
-        <NavLinks />
-        <NavIcons />
+      <div className="navbar">
+        <div className=" navbar-content">
+          <NavLogo />
+          <NavLinks />
+          <NavIcons />
+        </div>
       </div>
-    </div>
     </div>
   );
 };
