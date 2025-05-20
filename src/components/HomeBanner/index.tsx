@@ -20,7 +20,7 @@ const HomeBanner = () => {
             <button className="nav left">❮</button>
             <div className="carousel-content">
               <img src="/src/hero-img-1.png" alt="Fruits" />
-              <div className="tag">Fruites</div>
+              <div className="tag">Fruits</div>
             </div>
             <button className="nav right">❯</button>
           </div>

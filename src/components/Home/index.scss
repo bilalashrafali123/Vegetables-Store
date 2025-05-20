@@ -1,0 +1,16 @@
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.info-section {
+  padding: 40px 0;
+
+  .card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+}

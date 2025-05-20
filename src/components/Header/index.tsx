@@ -2,7 +2,8 @@ import "./index.scss";
 
 const Header = () => {
   return (
-    <div className="header container">
+      <div className="container">
+    <div className="header">
       <div className=" header-content">
         <div className="header-left">
           <span>
@@ -20,6 +21,7 @@ const Header = () => {
           <a href="#">Sales and Refunds</a>
         </div>
       </div>
+     </div>
     </div>
   );
 };
