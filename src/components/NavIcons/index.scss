@@ -1,9 +1,10 @@
+
 .nav-icons {
   display: flex;
   align-items: center;
   gap: 16px;
   font-size: 2rem;
-  color:#79C000;
+  color: #79C000;
 
   .icon-btn {
     border: 2px solid orange;
@@ -15,15 +16,17 @@
     justify-content: center;
     align-items: center;
     padding: 0;
+    color: #79C000;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(255, 181, 36);
+    }
 
     img {
       width: 16px;
       height: 16px;
     }
-  }
-  .icon-btn {
-    color: #79C000;
-    cursor: pointer;
   }
 
   .cart {
@@ -46,12 +49,30 @@
     }
   }
 
-  .icon-btn:hover {
-    background-color: rgb(255, 181, 36) ;
+  .bar-icon {
+    display: none;
+    border: 1px solid rgb(185, 185, 185);
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
   }
 
   .user-icon {
     width: 24px;
     height: 24px;
+  }
+
+  
+
+  @media (max-width: 1100px) {
+    .icon-btn,
+    .cart,
+    .fa-user {
+      display: none;
+    }
+
+    .bar-icon {
+      display: block;
+    }
   }
 }

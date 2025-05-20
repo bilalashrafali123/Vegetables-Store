@@ -2,6 +2,7 @@ import './index.scss';
 
 const NavIcons = () => {
   return (
+    <>
     <div className="nav-icons">
       <button className="icon-btn">
       <i className="fa-solid fa-magnifying-glass searchbar" ></i>
@@ -11,7 +12,9 @@ const NavIcons = () => {
         <span className="badge">3</span>
       </div>
       <i className="fa-solid fa-user"></i>
-    </div>
+      <i   className="fa-solid fa-bars bar-icon "></i>
+    </div> 
+    </>
   );
 };
 
