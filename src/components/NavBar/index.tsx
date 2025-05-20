@@ -5,8 +5,8 @@ import "./index.scss";
 
 const Navbar = () => {
   return (
+          <div className="container">
     <div className="navbar">
-        <div className="container">
         <div className=" navbar-content">
           <NavLogo />
           <NavLinks />

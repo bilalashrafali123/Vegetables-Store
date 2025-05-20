@@ -2,8 +2,8 @@ import "./index.scss";
 
 const Header = () => {
   return (
-      <div className="container">
     <div className="header">
+      <div className="container">
       <div className=" header-content">
         <div className="header-left">
           <span>
