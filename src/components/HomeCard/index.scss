@@ -2,11 +2,14 @@
     max-width: 1320px;
     margin: 0 auto;
     width: 100%;
+    padding: 0 1rem; // padding for small screens
   }
   
   .cards {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; // allow wrapping
+    justify-content: center;
+    gap: 1.5rem; // space between cards
   }
   
   .card {
@@ -18,23 +21,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 450px;
+    height: auto; // remove fixed height for flexibility
     margin-top: 30px;
+    background-color: #fff;
+    transition: transform 0.3s;
+  
+    &:hover {
+      transform: translateY(-5px);
+    }
   
     img {
       width: 100%;
+      height: auto;
       object-fit: cover;
-      border-bottom: none;
     }
   
     .label {
       width: 250px;
       text-align: center;
-      padding: 2rem 0;
+      padding: 2rem 1rem;
       border-radius: 15px;
-      height: 130px;
-  
-    
+      height: auto;
   
       p {
         margin: 0;
@@ -60,4 +67,27 @@
         color: #1b1b1b;
       }
     }
-  }  
+  }
+  
+  // Responsive adjustments
+  @media (max-width: 991px) {
+    .card {
+      max-width: 320px; // slightly narrower for tablets
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .card {
+      max-width: 100%; // full width for mobile
+    }
+  
+    .label {
+      width: 90%;
+      padding: 1.5rem 1rem;
+  
+      strong {
+        font-size: 1rem;
+      }
+    }
+  }
+  

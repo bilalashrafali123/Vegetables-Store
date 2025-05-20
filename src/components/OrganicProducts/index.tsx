@@ -1,14 +1,9 @@
-
-import './index.scss';
+import "./index.scss";
 
 const OrganicProducts = () => {
   return (
     <div className="products-section">
       <div className="container">
-       
-
-       
-
         <div className="cards-wrapper">
           <div className="card">
             <div className="card-image">
@@ -17,7 +12,8 @@ const OrganicProducts = () => {
             </div>
             <h3 className="card-title">Grapes</h3>
             <p className="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+              eiusmod te incididunt
             </p>
             <div className="card-footer">
               <span className="price">$4.99 / kg</span>
@@ -34,7 +30,8 @@ const OrganicProducts = () => {
             </div>
             <h3 className="card-title">Grapes</h3>
             <p className="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+              eiusmod te incididunt
             </p>
             <div className="card-footer">
               <span className="price">$4.99 / kg</span>
@@ -51,7 +48,8 @@ const OrganicProducts = () => {
             </div>
             <h3 className="card-title">Raspberries</h3>
             <p className="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+              eiusmod te incididunt
             </p>
             <div className="card-footer">
               <span className="price">$4.99 / kg</span>
@@ -68,7 +66,8 @@ const OrganicProducts = () => {
             </div>
             <h3 className="card-title">Apricots</h3>
             <p className="card-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt
+              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+              eiusmod te incididunt
             </p>
             <div className="card-footer">
               <span className="price">$4.99 / kg</span>
