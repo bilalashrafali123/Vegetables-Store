@@ -5,7 +5,6 @@ const MidCards = () => {
   return (
     <div className="container">
       <div className="midcards-wrapper">
-
         <div className="midcard-wrapper">
           <div className="midcard">
             <img src="/src/best-product-2.jpg" alt="Orange" />
@@ -18,8 +17,8 @@ const MidCards = () => {
             <FaStar color="limegreen" />
             <FaRegStar color="gray" />
           </div>
-          <div className="price">$3.12</div> 
-          <button className="add-to-cart"> 
+          <div className="price">$3.12</div>
+          <button className="add-to-cart">
             <FaLock /> Add to cart
           </button>
         </div>
@@ -77,7 +76,6 @@ const MidCards = () => {
             <FaLock /> Add to cart
           </button>
         </div>
-
       </div>
     </div>
   );

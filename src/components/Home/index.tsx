@@ -12,6 +12,8 @@ import BestSellerText from "../BestSellerText";
 import BestSellerCards from "../BestSellerCards";
 import MidCards from "../MidCards";
 import RatingCards from "../RatingCards";
+import TestimonialText from "../TestimonialText";
+import Testimonial from "../Testimonial";
 
 // import Footer from "../Footer";
 
@@ -62,6 +64,8 @@ const Home = () => {
       </div>
       <MidCards />
       <RatingCards />
+      <TestimonialText />
+      <Testimonial />
 
       {/* <div className="container">
         <Footer />
