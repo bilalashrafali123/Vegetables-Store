@@ -1,10 +1,10 @@
-import './index.scss';
+import "./index.scss";
 
 const HomeCard = () => {
   return (
+    <div className="container">
       <div className="cards">
-          <div className="container cards">
-        <div className="card">
+        <div className="card ">
           <img src="/src/featur-1.jpg" alt="Fresh Apples" />
           <div className="label green">
             <p>Fresh Apples</p>
@@ -24,7 +24,7 @@ const HomeCard = () => {
           <img src="/src/featur-3.jpg" alt="Exotic Vegetable" />
           <div className="label orange">
             <p>Exotic Vegetable</p>
-            <strong>Discount 30$</strong>
+            <strong>Discount $30</strong>
           </div>
         </div>
       </div>

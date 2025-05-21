@@ -1,24 +1,58 @@
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
 .products-section {
   padding: 2rem 0;
   font-family: "Segoe UI", sans-serif;
+  margin-top: 60px;
+
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    button {
+      border: none;
+      padding: 0.5rem 1.4rem;
+      border-radius: 999px;
+      background-color: #f2f2f2;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #333;
+
+      &.active {
+        background-color: #fbbf24;
+        color: white;
+      }
+    }
+  }
 
   .cards-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 2rem;
+    justify-content: center;
   }
 
   .card {
-    flex: 1 1 calc(25% - 1.5rem);
-    max-width: calc(25% - 1.5rem);
-    background-color: #fff;
+    width: 100%;
+    max-width: 300px;
     border: 1px solid #fbbf24;
     border-radius: 10px;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    background-color: #fff;
     transition: transform 0.3s;
 
     &:hover {
@@ -93,16 +127,33 @@
     }
   }
 
-  @media (max-width: 1024px) {
+  .section-title {
+    margin-top: 40px;
+  }
+
+  @media (min-width: 1200px) {
     .card {
-      flex: 0 0 48%;
-      max-width: 48%;
+      max-width: 300px;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 1199px) {
     .card {
-      flex: 1 1 100%;
+      max-width: 320px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .card {
+      max-width: 350px;
+    }
+    .section-title {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .card {
       max-width: 100%;
     }
 

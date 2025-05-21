@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 1320px;
   margin: 0 auto;
@@ -7,14 +13,14 @@
 .header {
   background-color: #8bc700;
   color: white;
-  border-radius: 230px; 
+  border-radius: 230px;
   padding: 10px;
 
   .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 48px;
+    padding: 15px;
   }
 
   .header-left,

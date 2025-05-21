@@ -1,5 +1,4 @@
 import "./index.scss";
-// import Footer from "../Footer";
 import Header from "../Header";
 import HomeBanner from "../HomeBanner";
 import InfoCard from "../InfoCard";
@@ -7,27 +6,47 @@ import Navbar from "../NavBar";
 import OrganicProducts from "../OrganicProducts";
 import OrganicHead from "../OrganicHead";
 import HomeCard from "../HomeCard";
+import VegetableProduct from "../VegetableProduct";
+// import Footer from "../Footer";
+
 const Home = () => {
   return (
     <>
       <Header />
-      <Navbar />
+
+      <div className="container">
+        <Navbar />
+      </div>
+
       <HomeBanner />
-      <section className="info-section">
-        <div className="container">
+
+      <div className="container">
+        <section className="info-section">
           <div className="card-wrapper">
             <InfoCard />
             <InfoCard />
             <InfoCard />
+            <InfoCard />
           </div>
-        </div>
-      </section>
-      <OrganicHead />
-      <OrganicProducts />
-      <OrganicProducts />
-      <HomeCard />
+        </section>
+      </div>
+      <div className="container">
+        <OrganicHead />
+      </div>
+      <div className="container">
+        <OrganicProducts />
+      </div>
+      <div className="container">
+        <HomeCard />
+      </div>
+      <div className="container">
+        <VegetableProduct />
+      </div>
 
-      {/* <Footer /> */}
+      {/* Footer, if you decide to add it later */}
+      {/* <div className="container">
+        <Footer />
+      </div> */}
     </>
   );
 };

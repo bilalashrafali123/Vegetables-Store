@@ -1,5 +1,6 @@
 import "./index.scss"
 
+
 const OrganicHead = () => {
   return (
     <div className="container">

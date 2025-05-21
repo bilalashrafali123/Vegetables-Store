@@ -1,5 +1,4 @@
-
-import './index.scss';
+import "./index.scss";
 
 const Footer = () => {
   return (
@@ -30,10 +29,11 @@ const Footer = () => {
           <div className="section why-us">
             <h3>Why People Like us!</h3>
             <p>
-              typesetting, remaining essentially unchanged. It was popularised in
-              the 1960s with the like Aldus PageMaker including of Lorem Ipsum.
+              typesetting, remaining essentially unchanged. It was popularised
+              in the 1960s with the like Aldus PageMaker including of Lorem
+              Ipsum.
             </p>
-            <button className='read-more'>Read More</button>
+            <button className="read-more">Read More</button>
           </div>
 
           <div className="section">
@@ -79,10 +79,12 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>
-            <i className="fa-regular fa-copyright"></i> <span>Your Site Name</span>, All right reserved.
+            <i className="fa-regular fa-copyright"></i>{" "}
+            <span>Your Site Name</span>, All right reserved.
           </p>
           <p>
-            Designed By <span className="green">HTML Codex</span> Distributed By <span className="green">ThemeWagon</span>
+            Designed By <span className="green">HTML Codex</span> Distributed By{" "}
+            <span className="green">ThemeWagon</span>
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 .home-banner {
-  background: url("/Vegetables-Store/Vegetable-Store/public/src/hero-img-1.png");
+  background: url("https://demo.htmlcodex.com/2824/vegetable-website-template/img/hero-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
   }
 
   .banner-text {
@@ -24,7 +24,7 @@
     .title {
       font-size: 60px;
       font-weight: 700;
-      color: #6aaf08;
+      color: #81c408;
       line-height: 1.2;
       margin: 20px 0;
     }
