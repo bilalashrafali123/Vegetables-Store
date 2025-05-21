@@ -62,7 +62,10 @@ const Home = () => {
       <RatingCards />
       <TestimonialText />
       <Testimonial />
+      {/* <div className="container">
       <Footer />
+      </div> */}
+
     
     </>
   );

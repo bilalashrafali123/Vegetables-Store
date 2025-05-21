@@ -7,10 +7,12 @@ const NavLinks = () => {
       <Link className="active" to="/">
         Home
       </Link>
-      <a href="#">Shop</a>
-      <a href="#">Shop Detail</a>
-      <a href="#">Pages ▾</a>
-      <a href="#">Contact</a>
+      <Link to="/shop">Shop</Link>
+      <Link to="/shopdetail">ShopDetail</Link>
+      <Link to="/pages">Pages</Link>
+      <Link to="/contact">Contact</Link>
+
+      
     </div>
   );
 };

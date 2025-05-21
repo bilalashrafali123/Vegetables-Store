@@ -1,8 +1,9 @@
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
+  gap: 2rem;
+  padding: 20px; 
 }
 
 .info-card {
@@ -12,10 +13,8 @@
   background: #f5f7f9;
   border-radius: 12px;
   padding: 32px;
-  width: 100%;
+  flex: 1 1 calc(25% - 2rem); 
   max-width: 261px;
-  margin-top: 50px;
-  flex: 0 0 23%;
   transition: transform 0.3s ease;
 
   &:hover {
@@ -54,20 +53,22 @@
   }
 }
 
+
 @media (max-width: 1200px) {
   .info-card {
-    flex: 0 0 30%;
+    flex: 1 1 calc(33.333% - 2rem); 
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .info-card {
-    flex: 0 0 48%;
+    flex: 1 1 calc(50% - 2rem); 
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .info-card {
-    flex: 0 0 100%;
+    flex: 1 1 100%; 
+    max-width: 100%;
   }
 }
