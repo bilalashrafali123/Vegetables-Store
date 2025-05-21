@@ -1,0 +1,167 @@
+.banner {
+  background-color: #ffb923;
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    color: #3b3b3b;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+
+      span {
+        color: white;
+        font-weight: 800;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .buy-button {
+      padding: 1rem 2rem;
+      border: 2px solid #3b3b3b;
+      background: transparent;
+      border-radius: 999px;
+      color: #3b3b3b;
+      font-weight: bold;
+      cursor: pointer;
+      align-self: flex-start;
+
+      &:hover {
+        background-color: rgb(4, 186, 4);
+      }
+    }
+  }
+
+  &__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .price-badge {
+      position: absolute;
+      top: -40px;
+      left: -40px;
+      background: white;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .price {
+        display: flex;
+        align-items: flex-start;
+        gap: 4px;
+
+        .big {
+          font-size: 3rem;
+          font-weight: 700;
+        }
+
+        .small {
+          font-size: 1rem;
+          display: flex;
+          flex-direction: column;
+          line-height: 1;
+
+          sup {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      object-fit: contain;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__content {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    &__text {
+      align-items: center;
+      text-align: center;
+
+      .buy-button {
+        align-self: center;
+      }
+    }
+
+    &__image {
+      .price-badge {
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    &__text {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      .buy-button {
+        padding: 0.8rem 1.6rem;
+      }
+    }
+
+    &__image {
+      img {
+        max-width: 100%;
+      }
+
+      .price-badge {
+        width: 80px;
+        height: 80px;
+
+        .price {
+          .big {
+            font-size: 2rem;
+          }
+
+          .small {
+            font-size: 0.75rem;
+
+            sup {
+              font-size: 0.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

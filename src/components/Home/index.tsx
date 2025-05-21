@@ -7,6 +7,7 @@ import OrganicProducts from "../OrganicProducts";
 import OrganicHead from "../OrganicHead";
 import HomeCard from "../HomeCard";
 import VegetableProduct from "../VegetableProduct";
+import Banner from "../Banner";
 // import Footer from "../Footer";
 
 const Home = () => {
@@ -42,6 +43,7 @@ const Home = () => {
       <div className="container">
         <VegetableProduct />
       </div>
+      <Banner />
 
       {/* Footer, if you decide to add it later */}
       {/* <div className="container">
