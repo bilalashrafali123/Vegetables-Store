@@ -10,6 +10,8 @@ import VegetableProduct from "../VegetableProduct";
 import Banner from "../Banner";
 import BestSellerText from "../BestSellerText";
 import BestSellerCards from "../BestSellerCards";
+import MidCards from "../MidCards";
+
 // import Footer from "../Footer";
 
 const Home = () => {
@@ -48,21 +50,17 @@ const Home = () => {
       <Banner />
       <BestSellerText />
       <div className="container">
-    <div className="bestcards-wrapper">
-    <BestSellerCards />
-    <BestSellerCards />
-    <BestSellerCards />
-  </div>
-</div>
-<div className="container">
-    <div className="bestcards-wrapper">
-    <BestSellerCards />
-    <BestSellerCards />
-    <BestSellerCards />
-  </div>
-</div>
+        <div className="bestcards-wrapper">
+          <BestSellerCards />
+          <BestSellerCards />
+          <BestSellerCards />
+          <BestSellerCards />
+          <BestSellerCards />
+          <BestSellerCards />
+        </div>
+      </div>
+      <MidCards />
 
-   
       {/* <div className="container">
         <Footer />
       </div> */}

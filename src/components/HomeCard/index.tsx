@@ -16,7 +16,7 @@ const HomeCard = () => {
           <img src="/src/featur-2.jpg" alt="Tasty Fruits" />
           <div className="label grey">
             <p>Tasty Fruits</p>
-            <strong>Free delivery</strong>
+            <strong>Free Delivery</strong>
           </div>
         </div>
 
