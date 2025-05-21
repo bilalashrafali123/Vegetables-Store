@@ -68,10 +68,10 @@ const Footer = () => {
               <li>Phone: +0123 4567 8910</li>
               <li>Payment Accepted</li>
               <div className="payment-icons">
-                <img src="/visa.png" alt="Visa" />
-                <img src="/mastercard.png" alt="MasterCard" />
-                <img src="/maestro.png" alt="Maestro" />
-                <img src="/paypal.png" alt="PayPal" />
+                <i className="fa-brands fa-cc-visa"></i>
+                <i className="fa-brands fa-cc-mastercard"></i>
+                <i className="fa-solid fa-credit-card"></i>
+                <i className="fa-brands fa-paypal"></i>
               </div>
             </ul>
           </div>
