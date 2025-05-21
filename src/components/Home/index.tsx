@@ -8,6 +8,8 @@ import OrganicHead from "../OrganicHead";
 import HomeCard from "../HomeCard";
 import VegetableProduct from "../VegetableProduct";
 import Banner from "../Banner";
+import BestSellerText from "../BestSellerText";
+import BestSellerCards from "../BestSellerCards";
 // import Footer from "../Footer";
 
 const Home = () => {
@@ -44,8 +46,23 @@ const Home = () => {
         <VegetableProduct />
       </div>
       <Banner />
+      <BestSellerText />
+      <div className="container">
+    <div className="bestcards-wrapper">
+    <BestSellerCards />
+    <BestSellerCards />
+    <BestSellerCards />
+  </div>
+</div>
+<div className="container">
+    <div className="bestcards-wrapper">
+    <BestSellerCards />
+    <BestSellerCards />
+    <BestSellerCards />
+  </div>
+</div>
 
-      {/* Footer, if you decide to add it later */}
+   
       {/* <div className="container">
         <Footer />
       </div> */}
