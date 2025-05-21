@@ -14,20 +14,16 @@ import MidCards from "../MidCards";
 import RatingCards from "../RatingCards";
 import TestimonialText from "../TestimonialText";
 import Testimonial from "../Testimonial";
-
-// import Footer from "../Footer";
+import Footer from "../Footer";
 
 const Home = () => {
   return (
     <>
-      <Header />
-
+    <Header />
       <div className="container">
         <Navbar />
       </div>
-
       <HomeBanner />
-
       <div className="container">
         <section className="info-section">
           <div className="card-wrapper">
@@ -66,10 +62,8 @@ const Home = () => {
       <RatingCards />
       <TestimonialText />
       <Testimonial />
-
-      {/* <div className="container">
-        <Footer />
-      </div> */}
+      <Footer />
+    
     </>
   );
 };
