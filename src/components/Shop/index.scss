@@ -61,36 +61,43 @@
     gap: 24px;
 
     .shop-title {
-      font-size: 20px;
+      font-size: 40px;
+      white-space: nowrap;
+      display: inline;
+      color: grey;
     }
 
     .search-bar {
       display: flex;
+      width: 257px;
 
       input {
         flex: 1;
-        padding: 6px 10px;
+        padding: 16px;
         border: 1px solid #ccc;
         font-size: 14px;
-        height: 36px;
+        height: 57px;
+        border-radius: 10px;
       }
 
       button {
         background: #ddd;
         border: none;
-        padding: 0 12px;
+        padding: 16px;
         cursor: pointer;
-        height: 36px;
+        height: 57px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 10px;
       }
     }
 
     .filter-group {
       h4 {
-        font-size: 16px;
+        font-size: 24px;
         margin-bottom: 10px;
+        color: grey;
       }
 
       ul {
@@ -98,13 +105,20 @@
         padding: 0;
 
         li {
+          display: flex;
+          align-items: center;
+          gap: 8px;
           margin-bottom: 6px;
-          font-size: 14px;
+          font-size: 16px;
+          color: #81c408;
+          cursor: pointer;
         }
       }
 
-      input[type="range"] {
-        width: 100%;
+      input {
+        width: auto;
+        height: auto;
+        cursor: pointer;
       }
     }
 
@@ -122,11 +136,12 @@
       border-radius: 20px;
       font-size: 14px;
       width: 100%;
+      color: #81c408;
 
       &:hover {
         background-color: #ffc107;
       }
-}
+    }
 
     .shop-banner {
       background: #ffcf6f;
@@ -202,7 +217,7 @@
 }
 .sidebar-banner-image {
   position: relative;
-  display: inline-block; 
+  display: inline-block;
 
   img {
     display: block;
@@ -212,8 +227,8 @@
 
   .banner-text {
     position: absolute;
-    bottom: 10px;    
-    right: 10px;     
+    bottom: 10px;
+    right: 10px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 10px;
@@ -223,4 +238,61 @@
   }
 }
 
+.featured-products {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 
+  .product {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      .title {
+        font-size: 18px;
+        font-weight: 500;
+        color: #2f3e46;
+        display: flex;
+        justify-content: center;
+      }
+
+      .stars {
+        font-size: 20px;
+        color: orange;
+        text-align: center;
+
+        .gray {
+          color: #ccc;
+        }
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+
+        .new {
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        .old {
+          font-size: 18px;
+          text-decoration: line-through;
+          color: red;
+        }
+      }
+    }
+  }
+}

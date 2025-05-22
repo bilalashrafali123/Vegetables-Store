@@ -1,3 +1,4 @@
+import Footer from "../Footer";
 import Header from "../Header";
 import Navbar from "../NavBar";
 import OrganicProducts from "../OrganicProducts";
@@ -9,7 +10,9 @@ const Shop = () => {
       <Header />
       <Navbar />
       <div className="Shop-banner-section">
-        <h2 className="Shop-banner-section-heading">SHOP <br /></h2>
+        <h2 className="Shop-banner-section-heading">
+          SHOP <br />
+        </h2>
         <div className="Shop-banner-section-links">
           <a href="#" className="active">
             Home /
@@ -54,51 +57,94 @@ const Shop = () => {
               <h4>Additional</h4>
               <ul>
                 <li>
-                  <input type="checkbox" /> Organic
+                  <label>
+                    <input type="checkbox" /> Organic
+                  </label>
                 </li>
                 <li>
-                  <input type="checkbox" /> Fresh
+                  <label>
+                    <input type="checkbox" /> Fresh
+                  </label>
                 </li>
                 <li>
-                  <input type="checkbox" /> Sales
+                  <label>
+                    <input type="checkbox" /> Sales
+                  </label>
                 </li>
                 <li>
-                  <input type="checkbox" /> Discount
+                  <label>
+                    <input type="checkbox" /> Discount
+                  </label>
                 </li>
                 <li>
-                  <input type="checkbox" /> Expired
+                  <label>
+                    <input type="checkbox" /> Expired
+                  </label>
                 </li>
               </ul>
             </div>
-
+            
             <div className="filter-group">
-              <h4>Featured products</h4>
-              <div className="featured-products">
-                <div className="featured-item" />
-                <div className="featured-item" />
-                <div className="featured-item" />
-              </div>
+  <h4>Featured products</h4>
+  <div className="featured-products">
+    <div className="product">
+      <img src="/src/best-product-3.jpg" alt="radish" />
+      <div className="product-info">
+        <span className="title">Big Banana</span>
+        <div className="stars">⭐⭐⭐⭐<span className="gray">⭐</span></div>
+        <div className="price">
+          <span className="new">2.99 $</span>
+          <span className="old">4.11 $</span>
+        </div>
+      </div>
+    </div>
+
+    <div className="product">
+      <img src="/src/best-product-3.jpg" alt="strawberry" />
+      <div className="product-info">
+        <span className="title">Big Banana</span>
+        <div className="stars">⭐⭐⭐⭐<span className="gray">⭐</span></div>
+        <div className="price">
+          <span className="new">2.99 $</span>
+          <span className="old">4.11 $</span>
+        </div>
+      </div>
+    </div>
+
+    <div className="product">
+      <img src="/src/best-product-3.jpg" alt="broccoli" />
+      <div className="product-info">
+        <span className="title">Big Banana</span>
+        <div className="stars">⭐⭐⭐⭐<span className="gray">⭐</span></div>
+        <div className="price">
+          <span className="new">2.99 $</span>
+          <span className="old">4.11 $</span>
+        </div>
+      </div>
+    </div>
+  </div>
               <button className="view-more">View More</button>
-               </div>
-               <div className="sidebar-banner-image">
-                <img
-                  src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/banner-fruits.jpg"
-                  alt="Sidebar Banner"
-                /> 
-                <div className="banner-text">Your Text Here</div>
+            </div>
+            <div className="sidebar-banner-image">
+              <img
+                src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/banner-fruits.jpg"
+                alt="Sidebar Banner"
+              />
+              <div className="banner-text">Your Text Here</div>
+            </div>
 
-              </div>
-
-            <div className="shop-banner">Fresh Fruits Banner</div>
+           
           </aside>
 
           <main className="products-area">
-            <div className="sort-bar">
+           <div className="background">
+           <div className="sort-bar">
               <span>Default Sorting:</span>
               <select>
                 <option>Nothing</option>
               </select>
             </div>
+           </div>
 
             <div className="product-grid">
               <OrganicProducts />
@@ -124,6 +170,7 @@ const Shop = () => {
           </main>
         </div>
       </section>
+      <Footer />
     </>
   );
 };
