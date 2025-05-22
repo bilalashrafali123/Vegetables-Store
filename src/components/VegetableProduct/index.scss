@@ -9,6 +9,7 @@
   text-align: left;
   margin-bottom: 1.5rem;
 }
+
 .products-section {
   padding: 2rem 0;
   font-family: "Segoe UI", sans-serif;
@@ -44,8 +45,9 @@
   }
 
   .card {
-    width: 100%;
+    flex: 1 1 calc(25% - 1.5rem);
     max-width: 300px;
+    min-width: 220px;
     border: 1px solid #fbbf24;
     border-radius: 10px;
     display: flex;
@@ -131,20 +133,16 @@
     margin-top: 40px;
   }
 
-  @media (min-width: 1200px) {
-    .card {
-      max-width: 300px;
-    }
-  }
-
   @media (max-width: 1199px) {
     .card {
+      flex: 1 1 calc(33.33% - 1.5rem);
       max-width: 320px;
     }
   }
 
   @media (max-width: 991px) {
     .card {
+      flex: 1 1 calc(50% - 1.5rem);
       max-width: 350px;
     }
     .section-title {
@@ -154,6 +152,7 @@
 
   @media (max-width: 767px) {
     .card {
+      flex: 1 1 100%;
       max-width: 100%;
     }
 

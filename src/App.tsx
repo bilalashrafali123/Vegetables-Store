@@ -14,10 +14,6 @@ const App = () => {
         <Route path="/shopdetail" element={<ShopDetail />} />
         <Route path="/pages" element={<Pages />} />
         <Route path="/contact" element={<Contact />} />
-
-
-
-
       </Routes>
     </>
   );

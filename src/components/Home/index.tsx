@@ -37,15 +37,29 @@ const Home = () => {
       <div className="container">
         <OrganicHead />
       </div>
-      <div className="container">
+     
+      <div className="products-section">
+      <div className="cards-wrapper">
         <OrganicProducts />
+        <OrganicProducts />
+        <OrganicProducts />
+        <OrganicProducts />
+        <OrganicProducts />
+        <OrganicProducts />
+        <OrganicProducts />
+        <OrganicProducts />
+      </div>
       </div>
       <div className="container">
         <HomeCard />
       </div>
+      
       <div className="container">
-        <VegetableProduct />
-      </div>
+      <VegetableProduct />
+    </div>
+      
+
+       
       <Banner />
       <BestSellerText />
       <div className="container">

@@ -5,13 +5,12 @@
   .cards-wrapper {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-between;
-    gap: 2rem;
   }
 
   .card {
-    flex: 1 1 calc(25% - 1.5rem);
-    max-width: calc(25% - 1.5rem);
+    flex: 0 0 32%;
     background-color: #fff;
     border: 1px solid #fbbf24;
     border-radius: 10px;
@@ -52,6 +51,7 @@
       font-size: 1.3rem;
       font-weight: 600;
       margin: 1rem 0 0.5rem;
+      text-align: center;
     }
 
     .card-description {
@@ -86,24 +86,24 @@
         font-weight: 500;
         font-size: 0.95rem;
         cursor: pointer;
-      }
-      .add-to-cart:hover {
-        background-color: #fbbf24;
+
+        &:hover {
+          background-color: #fbbf24;
+          color: white;
+        }
       }
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 992px) {
     .card {
       flex: 0 0 48%;
-      max-width: 48%;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 576px) {
     .card {
-      flex: 1 1 100%;
-      max-width: 100%;
+      flex: 0 0 100%;
     }
 
     .card-footer {
