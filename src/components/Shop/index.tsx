@@ -9,6 +9,7 @@ const Shop = () => {
     <>
       <Header />
       <Navbar />
+
       <div className="Shop-banner-section">
         <h2 className="Shop-banner-section-heading">
           SHOP <br />
@@ -25,26 +26,35 @@ const Shop = () => {
           </a>
         </div>
       </div>
+
       <section className="shop-page">
         <div className="container shop-layout">
           <aside className="sidebar">
             <h2 className="shop-title">Fresh fruits shop</h2>
 
-            <div className="search-bar">
+            <div className="search-box">
               <input type="text" placeholder="keywords" />
-              <button>
-                <i className="fas fa-search" />
-              </button>
+              <div className="icon">🔍</div>
             </div>
 
             <div className="filter-group">
               <h4>Categories</h4>
               <ul>
-                <li>Apples</li>
-                <li>Oranges</li>
-                <li>Strawberry</li>
-                <li>Banana</li>
-                <li>Pumpkin</li>
+                <li>
+                  Apples <span>(3)</span>
+                </li>
+                <li>
+                  Oranges <span>(5)</span>
+                </li>
+                <li>
+                  Strawberry <span>(2)</span>
+                </li>
+                <li>
+                  Banana <span>(8)</span>
+                </li>
+                <li>
+                  Pumpkin <span>(5)</span>
+                </li>
               </ul>
             </div>
 
@@ -83,68 +93,77 @@ const Shop = () => {
                 </li>
               </ul>
             </div>
-            
+
             <div className="filter-group">
-  <h4>Featured products</h4>
-  <div className="featured-products">
-    <div className="product">
-      <img src="/src/best-product-3.jpg" alt="radish" />
-      <div className="product-info">
-        <span className="title">Big Banana</span>
-        <div className="stars">⭐⭐⭐⭐<span className="gray">⭐</span></div>
-        <div className="price">
-          <span className="new">2.99 $</span>
-          <span className="old">4.11 $</span>
-        </div>
-      </div>
-    </div>
+              <h4>Featured products</h4>
+              <div className="featured-products">
+                <div className="product">
+                  <img src="/src/best-product-3.jpg" alt="radish" />
+                  <div className="product-info">
+                    <span className="title">Big Banana</span>
+                    <div className="stars">
+                      ⭐⭐⭐⭐<span className="gray">⭐</span>
+                    </div>
+                    <div className="price">
+                      <span className="new">2.99 $</span>
+                      <span className="old">4.11 $</span>
+                    </div>
+                  </div>
+                </div>
 
-    <div className="product">
-      <img src="/src/best-product-3.jpg" alt="strawberry" />
-      <div className="product-info">
-        <span className="title">Big Banana</span>
-        <div className="stars">⭐⭐⭐⭐<span className="gray">⭐</span></div>
-        <div className="price">
-          <span className="new">2.99 $</span>
-          <span className="old">4.11 $</span>
-        </div>
-      </div>
-    </div>
+                <div className="product">
+                  <img src="/src/best-product-3.jpg" alt="strawberry" />
+                  <div className="product-info">
+                    <span className="title">Big Banana</span>
+                    <div className="stars">
+                      ⭐⭐⭐⭐<span className="gray">⭐</span>
+                    </div>
+                    <div className="price">
+                      <span className="new">2.99 $</span>
+                      <span className="old">4.11 $</span>
+                    </div>
+                  </div>
+                </div>
 
-    <div className="product">
-      <img src="/src/best-product-3.jpg" alt="broccoli" />
-      <div className="product-info">
-        <span className="title">Big Banana</span>
-        <div className="stars">⭐⭐⭐⭐<span className="gray">⭐</span></div>
-        <div className="price">
-          <span className="new">2.99 $</span>
-          <span className="old">4.11 $</span>
-        </div>
-      </div>
-    </div>
-  </div>
+                <div className="product">
+                  <img src="/src/best-product-3.jpg" alt="broccoli" />
+                  <div className="product-info">
+                    <span className="title">Big Banana</span>
+                    <div className="stars">
+                      ⭐⭐⭐⭐<span className="gray">⭐</span>
+                    </div>
+                    <div className="price">
+                      <span className="new">2.99 $</span>
+                      <span className="old">4.11 $</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <button className="view-more">View More</button>
             </div>
+
             <div className="sidebar-banner-image">
               <img
                 src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/banner-fruits.jpg"
                 alt="Sidebar Banner"
               />
-              <div className="banner-text">Your Text Here</div>
+              <div className="banner-text">
+                Fresh
+                <br />
+                Fruits
+                <br />
+                Banner
+              </div>
             </div>
-
-           
           </aside>
 
           <main className="products-area">
-           <div className="background">
-           <div className="sort-bar">
-              <span>Default Sorting:</span>
-              <select>
+            <div className="sort-dropdown">
+              <span className="label">Default Sorting:</span>
+              <select className="select">
                 <option>Nothing</option>
               </select>
             </div>
-           </div>
 
             <div className="product-grid">
               <OrganicProducts />
@@ -170,6 +189,7 @@ const Shop = () => {
           </main>
         </div>
       </section>
+
       <Footer />
     </>
   );
