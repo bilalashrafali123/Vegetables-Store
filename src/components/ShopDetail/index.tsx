@@ -1,8 +1,14 @@
-import React from 'react'
+import Header from '../Header'
+import Navbar from '../NavBar'
+import ShopBanner from '../ShopBanner'
 
 const ShopDetail = () => {
   return (
-    <div>ShopDetail</div>
+    <>
+    <Header />
+    <Navbar />
+    <ShopBanner title='ShopDetail' title2='ShopDetail' />
+    </>
   )
 }
 

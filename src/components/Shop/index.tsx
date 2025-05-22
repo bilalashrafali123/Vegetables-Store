@@ -2,6 +2,7 @@ import Footer from "../Footer";
 import Header from "../Header";
 import Navbar from "../NavBar";
 import OrganicProducts from "../OrganicProducts";
+import ShopBanner from "../ShopBanner";
 import "./index.scss";
 
 const Shop = () => {
@@ -9,23 +10,7 @@ const Shop = () => {
     <>
       <Header />
       <Navbar />
-
-      <div className="Shop-banner-section">
-        <h2 className="Shop-banner-section-heading">
-          SHOP <br />
-        </h2>
-        <div className="Shop-banner-section-links">
-          <a href="#" className="active">
-            Home /
-          </a>
-          <a href="#" className="active">
-            Pages /
-          </a>
-          <a href="#" className="active-white">
-            Shop
-          </a>
-        </div>
-      </div>
+      <ShopBanner title="Shop" title2="Shop" />
 
       <section className="shop-page">
         <div className="container shop-layout">
@@ -157,8 +142,9 @@ const Shop = () => {
             </div>
           </aside>
 
+          {/* Main Content */}
           <main className="products-area">
-            <div className="sort-dropdown">
+            <div className="sort-bar">
               <span className="label">Default Sorting:</span>
               <select className="select">
                 <option>Nothing</option>

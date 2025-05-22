@@ -1,8 +1,15 @@
-import React from 'react'
+import Header from "../Header"
+import Navbar from "../NavBar"
+import ShopBanner from "../ShopBanner"
+import "./index.scss"
 
 const Pages = () => {
   return (
-    <div>Pages</div>
+    <>
+   <Header />
+   <Navbar />
+   <ShopBanner title="Pages" title2="Pages" />
+   </>
   )
 }
 

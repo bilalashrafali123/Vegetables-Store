@@ -1,0 +1,41 @@
+.Shop-banner-section {
+    background-image: url("https://demo.htmlcodex.com/2824/vegetable-website-template/img/cart-page-header-img.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    .Shop-banner-section-heading {
+      color: white;
+      font-size: 35px;
+      text-align: center;
+      line-height: 1.2;
+    }
+  
+    .Shop-banner-section-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      margin-top: 10px;
+  
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        padding: 0 5px;
+  
+        &.active {
+          color: #81c408;
+        }
+  
+        &.active-white {
+          color: white;
+        }
+      }
+    }
+  }
