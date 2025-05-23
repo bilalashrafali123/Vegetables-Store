@@ -9,7 +9,7 @@ const Cart = () => {
     <>
     <Header />
     <Navbar />
-    <ShopBanner title="Cart" title2="Cart" />``
+    <ShopBanner title="Cart" title2="Cart" />
     {/* <Footer /> */}
     </>
   )
