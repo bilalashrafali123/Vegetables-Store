@@ -1,54 +1,97 @@
 .container {
-    max-width: 1320px;
-    margin: 0 auto;
-    width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+  // padding: 0 16px;
 }
 
 .wrapper {
-    display: flex;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .page-icon i {
-    font-size: 100px;
-    color: #ffb524;
+  font-size: 110px;
+  color: #ffb524;
 }
 
 .page-icon h1 {
- font-size: 80px;
- color:#45595b;
+  font-size: 80px;
+  color: #45595b;
 }
 
 .page-icon h2 {
-    font-size: 40px;
-    color:#45595b;
-
+  font-size: 40px;
+  color: #45595b;
 }
 
-.page-icon P {
-    color:#45595b;
-    margin-top: 10px;
+.page-icon p {
+  color: #45595b;
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 .page-icon button {
-    width: 233.46px;
-    height: 57.6;
-    margin-top: 20px;
-    padding: 16px 48px;
-    border: 1px solid  #ffb524 ;
-    border-radius: 20px;
-    vertical-align: middle;
-    color: #45595b;
-    background-color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    
+  width: 233.46px;
+  height: 57.6px;
+  margin-top: 20px;
+  padding: 16px 48px;
+  border: 1px solid #ffb524;
+  border-radius: 20px;
+  vertical-align: middle;
+  color: #45595b;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
-    &:hover {
-        background-color: #ffb524;
-    }
+  &:hover {
+    background-color: #ffb524;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-icon i {
+    font-size: 80px;
+  }
+
+  .page-icon h1 {
+    font-size: 60px;
+  }
+
+  .page-icon h2 {
+    font-size: 30px;
+  }
+
+  .page-icon button {
+    width: 200px;
+    padding: 14px 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-icon i {
+    font-size: 60px;
+  }
+
+  .page-icon h1 {
+    font-size: 40px;
+  }
+
+  .page-icon h2 {
+    font-size: 24px;
+  }
+
+  .page-icon p {
+    font-size: 16px;
+  }
+
+  .page-icon button {
+    width: 180px;
+    padding: 12px 24px;
+  }
 }
