@@ -11,6 +11,7 @@ const NavLinks = () => {
       <Link to="/shopdetail">ShopDetail</Link>
       <Link to="/pages">Pages</Link>
       <Link to="/contact">Contact</Link>
+      <Link to="/page404">Page404</Link>
 
       
     </div>
