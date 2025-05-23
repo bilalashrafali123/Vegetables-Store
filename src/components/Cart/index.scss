@@ -42,3 +42,37 @@
         border: 1px solid rgb(207, 207, 207);
     }
 }
+
+.coupon {
+    margin-top: 20px;
+
+    input {
+        width: 186px;
+        height: 56px;
+        padding: 16px 2px;
+        border-radius: 20px;
+        border: transparent;
+        margin: 0 48px 24px 0;
+        margin-left: 50px;
+        border: 1px solid rgb(172, 171, 171);
+        
+    }
+
+    button {
+    width: 157px;
+    height: 57px;
+    padding: 16px 24px;
+    color:#8bc700 ;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid  #f4a300;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+     &:hover {
+        background-color: #f4a300;
+        color: white;
+     }
+    }
+
+}

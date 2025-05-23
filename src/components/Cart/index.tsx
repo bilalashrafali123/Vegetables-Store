@@ -29,7 +29,7 @@ const Cart = () => {
                 <div className="table-wrapper">
                   <img
                     src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/vegetable-item-3.png"
-                    alt=""
+                    alt="img"
                   />
                 </div>
               </th>
@@ -47,7 +47,7 @@ const Cart = () => {
               <div className="table-wrapper">
                 <img
                   src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/vegetable-item-5.jpg"
-                  alt=""
+                  alt="img"
                 />
               </div>
             </th>
@@ -65,8 +65,8 @@ const Cart = () => {
               <th scope="row">
                 <div className="table-wrapper">
                   <img
-                    src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/vegetable-item-3.png"
-                    alt=""
+                    src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/vegetable-item-2.jpg"
+                    alt="img"
                   />
                 </div>
               </th>
@@ -80,6 +80,10 @@ const Cart = () => {
             </tr>
           </tbody>
         </table>
+         <div className="coupon">
+         <input type="text" placeholder="Coupon Code" />
+         <button>Apply Coupon</button>
+      </div>
       </div>
       {/* <Footer /> */}
     </>
