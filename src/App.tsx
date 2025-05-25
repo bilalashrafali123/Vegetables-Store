@@ -6,7 +6,7 @@ import ShopDetail from "./components/ShopDetail";
 import Contact from "./components/Contact";
 import Page404 from "./components/Page404";
 import Cart from "./components/Cart";
-// import Checkout from "./components/Checkout";
+import Checkout from "./components/Checkout";
 import Login from "./components/Login";
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/page404" element={<Page404 />} />
         <Route path="/cart" element={<Cart />} />
-        {/* <Route path="/checkout" element={<Checkout />} /> */}
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="/login" element={<Login />} />
 
 

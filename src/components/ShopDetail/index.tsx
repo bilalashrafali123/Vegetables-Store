@@ -169,7 +169,6 @@ const ShopDetail = () => {
           <div className="right">
             <div className="search-box">
               <input type="text" placeholder="keywords" />
-              <button>🔍</button>
             </div>
 
             <div className="categories">
