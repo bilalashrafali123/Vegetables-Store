@@ -1,3 +1,4 @@
+import Footer from "../Footer"
 import Header from "../Header"
 import Navbar from "../NavBar"
 import ShopBanner from "../ShopBanner"
@@ -29,6 +30,7 @@ const Login = () => {
         </div>
       </div>
     </div>
+    <Footer />
     </>
   )
 }

@@ -1,13 +1,14 @@
+import { useState } from "react";
 import Footer from "../Footer";
 import Header from "../Header";
-
 import Navbar from "../NavBar";
-
 import ShopBanner from "../ShopBanner";
 import VegetableProduct from "../VegetableProduct";
 import "./index.scss";
 
 const ShopDetail = () => {
+  const [tab, setTab] = useState("description");
+
   return (
     <>
       <Header />
@@ -17,21 +18,28 @@ const ShopDetail = () => {
       <div className="container shop-detail">
         <div className="top">
           <div className="left">
-           
             <div className="product-flex">
-               <div className="image">
+              <div className="image">
                 <img
                   src="https://themewagon.github.io/fruitables/img/single-item.jpg"
                   alt="Broccoli"
                 />
               </div>
               <div className="info">
-                <h2>Broccoli</h2>
+                <h3>Broccoli</h3>
                 <p className="category">Category: Vegetables</p>
                 <div className="price-rating">
                   <span className="price">3.35 $</span>
                   <div className="stars">★★★★★</div>
                 </div>
+                <p className="desc">
+                  The generated Lorem Ipsum is therefore always free from
+                  repetition injected humour...
+                </p>
+                <p className="desc">
+                  The generated Lorem Ipsum is therefore always free from
+                  repetition injected humour...
+                </p>
                 <p className="desc">
                   The generated Lorem Ipsum is therefore always free from
                   repetition injected humour...
@@ -48,32 +56,104 @@ const ShopDetail = () => {
             </div>
 
             <div className="tabs">
-              <button className="active">Description</button>
-              <button>Reviews</button>
+              <button
+                className={tab === "description" ? "active" : ""}
+                onClick={() => setTab("description")}
+              >
+                Description
+              </button>
+              <button
+                className={tab === "review" ? "active" : ""}
+                onClick={() => setTab("review")}
+              >
+                Reviews
+              </button>
             </div>
 
-            <div className="info-table">
-              <div>
-                <span>Weight</span>
-                <span>1 Kg</span>
+            {tab === "description" && (
+              <div className="info-table">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptate error omnis explicabo perspiciatis nesciunt
+                  consequuntur, voluptatum dignissimos labore provident harum
+                  adipisci eum sit, magni voluptas enim magnam doloribus esse
+                  odit.
+                </p>
+                <div>
+                  <span>Weight</span>
+                  <span>1 Kg</span>
+                </div>
+                <div>
+                  <span>Country of Origin</span>
+                  <span>Agro Farm</span>
+                </div>
+                <div>
+                  <span>Quality</span>
+                  <span>Organic</span>
+                </div>
+                <div>
+                  <span>Check</span>
+                  <span>Healthy</span>
+                </div>
+                <div>
+                  <span>Min Weight</span>
+                  <span>250 Kg</span>
+                </div>
               </div>
-              <div>
-                <span>Country of Origin</span>
-                <span>Agro Farm</span>
+            )}
+
+            {tab === "review" && (
+              <div className="review-container">
+                <div className="review">
+                  <div className="avatar-date">
+                    <i className="fa-regular fa-circle-user"></i>
+
+                    <div className="date-name">
+                      <span className="date">April 12, 2024</span>
+                      <h3 className="name">Jason Smith</h3>
+                    </div>
+                  </div>
+                  <div className="content-rating">
+                    <p className="text">
+                      The generated Lorem Ipsum is therefore always free from
+                      repetition injected humour, or non-characteristic words
+                      etc. Susp endisse ultricies nisi vel quam suscipit
+                    </p>
+                    <div className="stars">
+                      <span className="star filled">★</span>
+                      <span className="star filled">★</span>
+                      <span className="star filled">★</span>
+                      <span className="star filled">★</span>
+                      <span className="star">★</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="review">
+                  <div className="avatar-date">
+                    <i className="fa-regular fa-circle-user"></i>
+                    <div className="date-name">
+                      <span className="date">April 12, 2024</span>
+                      <h3 className="name">Sam Peters</h3>
+                    </div>
+                  </div>
+                  <div className="content-rating">
+                    <p className="text">
+                      The generated Lorem Ipsum is therefore always free from
+                      repetition injected humour, or non-characteristic words
+                      etc. Susp endisse ultricies nisi vel quam suscipit
+                    </p>
+                    <div className="stars">
+                      <span className="star filled">★</span>
+                      <span className="star filled">★</span>
+                      <span className="star filled">★</span>
+                      <span className="star">★</span>
+                      <span className="star">★</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div>
-                <span>Quality</span>
-                <span>Organic</span>
-              </div>
-              <div>
-                <span>Check</span>
-                <span>Healthy</span>
-              </div>
-              <div>
-                <span>Min Weight</span>
-                <span>250 Kg</span>
-              </div>
-            </div>
+            )}
 
             <div className="comment-form">
               <h3>Leave a Reply</h3>
@@ -86,7 +166,6 @@ const ShopDetail = () => {
             </div>
           </div>
 
-         
           <div className="right">
             <div className="search-box">
               <input type="text" placeholder="keywords" />
@@ -96,11 +175,21 @@ const ShopDetail = () => {
             <div className="categories">
               <h4>Categories</h4>
               <ul>
-                <li>Apples <span>(5)</span></li>
-                <li>Oranges <span>(4)</span></li>
-                <li>Strawberry <span>(3)</span></li>
-                <li>Banana <span>(2)</span></li>
-                <li>Pumpkin <span>(1)</span></li>
+                <li>
+                  Apples <span>(5)</span>
+                </li>
+                <li>
+                  Oranges <span>(4)</span>
+                </li>
+                <li>
+                  Strawberry <span>(3)</span>
+                </li>
+                <li>
+                  Banana <span>(2)</span>
+                </li>
+                <li>
+                  Pumpkin <span>(1)</span>
+                </li>
               </ul>
             </div>
 
@@ -155,8 +244,11 @@ const ShopDetail = () => {
             </div>
 
             <div className="sidebar-banner-image">
-              <img src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/banner-fruits.jpg" alt="Fresh Fruits Banner" />
-            <div className="banner-text">
+              <img
+                src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/banner-fruits.jpg"
+                alt="Fresh Fruits Banner"
+              />
+              <div className="banner-text">
                 Fresh
                 <br />
                 Fruits
@@ -167,12 +259,11 @@ const ShopDetail = () => {
           </div>
         </div>
 
-       
-          <div className="container">
-           <VegetableProduct />
-          </div>
-       
+        <div className="container">
+          <VegetableProduct />
+        </div>
       </div>
+
       <Footer />
     </>
   );
