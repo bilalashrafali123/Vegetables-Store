@@ -142,7 +142,7 @@ const Shop = () => {
             </div>
           </aside>
 
-          {/* Main Content */}
+        
           <main className="products-area">
             <div className="sort-bar">
               <span className="label">Default Sorting:</span>
