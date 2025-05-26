@@ -1,11 +1,14 @@
 import "./index.scss";
+interface IBannerProps {
+  title: string;
+}  
 
-const VegetableProduct = () => {
+const VegetableProduct = (props : IBannerProps) => {
   return (
     <>
       <div className="products-section">
         <div className="container">
-          <h2 className="section-title">Our Organic Fresh Vegetables</h2>
+          <h2 className="section-title">{props.title}</h2>
           <div className="cards-wrapper">
             <div className="card">
               <div className="card-image">
@@ -24,7 +27,6 @@ const VegetableProduct = () => {
                 </button>
               </div>
             </div>
-
             <div className="card">
               <div className="card-image">
                 <span className="category-badge">Vegetables</span>
@@ -42,8 +44,7 @@ const VegetableProduct = () => {
                 </button>
               </div>
             </div>
-
-            <div className="card">
+           <div className="card">
               <div className="card-image">
                 <span className="category-badge">Vegetables</span>
                 <img src="/src/vegetable-item-5.jpg" alt="Raspberries" />
@@ -60,7 +61,6 @@ const VegetableProduct = () => {
                 </button>
               </div>
             </div>
-
             <div className="card">
               <div className="card-image">
                 <span className="category-badge">Vegetables</span>

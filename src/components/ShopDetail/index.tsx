@@ -6,6 +6,7 @@ import ShopBanner from "../ShopBanner";
 import VegetableProduct from "../VegetableProduct";
 import "./index.scss";
 
+
 const ShopDetail = () => {
   const [tab, setTab] = useState("description");
 
@@ -14,7 +15,6 @@ const ShopDetail = () => {
       <Header />
       <Navbar />
       <ShopBanner title="ShopDetail" title2="ShopDetail" />
-
       <div className="container shop-detail">
         <div className="top">
           <div className="left">
@@ -54,7 +54,6 @@ const ShopDetail = () => {
                 </div>
               </div>
             </div>
-
             <div className="tabs">
               <button
                 className={tab === "description" ? "active" : ""}
@@ -69,7 +68,6 @@ const ShopDetail = () => {
                 Reviews
               </button>
             </div>
-
             {tab === "description" && (
               <div className="info-table">
                 <p>
@@ -79,29 +77,31 @@ const ShopDetail = () => {
                   adipisci eum sit, magni voluptas enim magnam doloribus esse
                   odit.
                 </p>
-                <div>
-                  <span>Weight</span>
-                  <span>1 Kg</span>
-                </div>
-                <div>
-                  <span>Country of Origin</span>
-                  <span>Agro Farm</span>
-                </div>
-                <div>
-                  <span>Quality</span>
-                  <span>Organic</span>
-                </div>
-                <div>
-                  <span>Check</span>
-                  <span>Healthy</span>
-                </div>
-                <div>
-                  <span>Min Weight</span>
-                  <span>250 Kg</span>
-                </div>
-              </div>
-            )}
-
+                <table className="flex-table">
+                    <tbody>
+                      <tr>
+                        <td>Weight</td>
+                        <td>1 kg</td>
+                      </tr>
+                      <tr>
+                        <td>Country of Origin</td>
+                        <td>Agro Farm</td>
+                      </tr>
+                      <tr>
+                        <td>Quality</td>
+                        <td>Organic</td>
+                      </tr>
+                      <tr>
+                        <td>Check</td>
+                        <td>Healthy</td>
+                      </tr>
+                      <tr>
+                        <td>Min Weight</td>
+                        <td>250 Kg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div> )}
             {tab === "review" && (
               <div className="review-container">
                 <div className="review">
@@ -128,7 +128,6 @@ const ShopDetail = () => {
                     </div>
                   </div>
                 </div>
-
                 <div className="review">
                   <div className="avatar-date">
                     <i className="fa-regular fa-circle-user"></i>
@@ -154,7 +153,6 @@ const ShopDetail = () => {
                 </div>
               </div>
             )}
-
             <div className="comment-form">
               <h3>Leave a Reply</h3>
               <div className="inputs">
@@ -165,7 +163,6 @@ const ShopDetail = () => {
               <button className="comment-btn">Post Comment</button>
             </div>
           </div>
-
           <div className="right">
             <div className="search-box">
               <input type="text" placeholder="keywords" />
@@ -191,7 +188,6 @@ const ShopDetail = () => {
                 </li>
               </ul>
             </div>
-
             <div className="featured">
               <div className="filter-group">
                 <h4>Featured products</h4>
@@ -209,7 +205,6 @@ const ShopDetail = () => {
                       </div>
                     </div>
                   </div>
-
                   <div className="product">
                     <img src="/src/best-product-3.jpg" alt="strawberry" />
                     <div className="product-info">
@@ -223,8 +218,7 @@ const ShopDetail = () => {
                       </div>
                     </div>
                   </div>
-
-                  <div className="product">
+                   <div className="product">
                     <img src="/src/best-product-3.jpg" alt="broccoli" />
                     <div className="product-info">
                       <span className="title">Big Banana</span>
@@ -241,7 +235,6 @@ const ShopDetail = () => {
                 <button className="view-more">View More</button>
               </div>
             </div>
-
             <div className="sidebar-banner-image">
               <img
                 src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/banner-fruits.jpg"
@@ -257,12 +250,10 @@ const ShopDetail = () => {
             </div>
           </div>
         </div>
-
         <div className="container">
-          <VegetableProduct />
+          <VegetableProduct title="Related Products" />
         </div>
       </div>
-
       <Footer />
     </>
   );

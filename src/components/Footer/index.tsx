@@ -14,7 +14,6 @@ const Footer = () => {
             <input type="email" placeholder="Your Email" />
             <button type="submit">Subscribe Now</button>
           </form>
-
           <div className="social-icons">
             <i className="fa-brands fa-twitter"></i>
             <i className="fa-brands fa-facebook-f"></i>
@@ -22,9 +21,7 @@ const Footer = () => {
             <i className="fa-brands fa-linkedin-in"></i>
           </div>
         </div>
-
         <hr />
-
         <div className="footer-links">
           <div className="section why-us">
             <h3>Why People Like us!</h3>
@@ -47,8 +44,7 @@ const Footer = () => {
               <li>FAQs & Help</li>
             </ul>
           </div>
-
-          <div className="section">
+           <div className="section">
             <h3>Account</h3>
             <ul>
               <li>My Account</li>
@@ -59,7 +55,6 @@ const Footer = () => {
               <li>International Orders</li>
             </ul>
           </div>
-
           <div className="section">
             <h3>Contact</h3>
             <ul>
@@ -76,8 +71,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
-        <div className="footer-bottom">
+          <div className="footer-bottom">
           <p>
             <i className="fa-regular fa-copyright"></i>{" "}
             <span>Your Site Name</span>, All right reserved.
@@ -88,7 +82,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-
       <button className="scroll-top">
         <i className="fa-solid fa-arrow-up"></i>
       </button>

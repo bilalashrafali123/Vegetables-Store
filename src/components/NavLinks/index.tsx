@@ -4,9 +4,7 @@ import "./index.scss";
 const NavLinks = () => {
   return (
     <div className="navlinks">
-      <Link className="active" to="/">
-        Home
-      </Link>
+      <Link className="active" to="/">Home</Link>
       <Link to="/shop">Shop</Link>
       <Link to="/shopdetail">ShopDetail</Link>
       <Link to="/contact">Contact</Link>
@@ -14,10 +12,6 @@ const NavLinks = () => {
       <Link to="/cart">Cart</Link>
       <Link to="/checkout">Checkout</Link>
       <Link to="/login">Login</Link>
-
-
-
-      
     </div>
   );
 };

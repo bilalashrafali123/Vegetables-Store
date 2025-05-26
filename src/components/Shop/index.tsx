@@ -11,16 +11,13 @@ const Shop = () => {
       <Header />
       <Navbar />
       <ShopBanner title="Shop" title2="Shop" />
-
       <section className="shop-page">
         <div className="container shop-layout">
           <aside className="sidebar">
             <h2 className="shop-title">Fresh fruits shop</h2>
-
             <div className="search-box">
               <input type="text" placeholder="keywords" />
             </div>
-
             <div className="filter-group">
               <h4>Categories</h4>
               <ul>
@@ -41,12 +38,10 @@ const Shop = () => {
                 </li>
               </ul>
             </div>
-
             <div className="filter-group">
               <h4>Price</h4>
               <input type="range" min="0" max="100" />
             </div>
-
             <div className="filter-group">
               <h4>Additional</h4>
               <ul>
@@ -77,7 +72,6 @@ const Shop = () => {
                 </li>
               </ul>
             </div>
-
             <div className="filter-group">
               <h4>Featured products</h4>
               <div className="featured-products">
@@ -94,7 +88,6 @@ const Shop = () => {
                     </div>
                   </div>
                 </div>
-
                 <div className="product">
                   <img src="/src/best-product-3.jpg" alt="strawberry" />
                   <div className="product-info">
@@ -108,7 +101,6 @@ const Shop = () => {
                     </div>
                   </div>
                 </div>
-
                 <div className="product">
                   <img src="/src/best-product-3.jpg" alt="broccoli" />
                   <div className="product-info">
@@ -125,7 +117,6 @@ const Shop = () => {
               </div>
               <button className="view-more">View More</button>
             </div>
-
             <div className="sidebar-banner-image">
               <img
                 src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/banner-fruits.jpg"
@@ -140,8 +131,6 @@ const Shop = () => {
               </div>
             </div>
           </aside>
-
-        
           <main className="products-area">
             <div className="sort-bar">
               <span className="label">Default Sorting:</span>
@@ -149,7 +138,6 @@ const Shop = () => {
                 <option>Nothing</option>
               </select>
             </div>
-
             <div className="product-grid">
               <OrganicProducts />
               <OrganicProducts />
@@ -161,7 +149,6 @@ const Shop = () => {
               <OrganicProducts />
               <OrganicProducts />
             </div>
-
             <div className="pagination">
               <button className="active">1</button>
               <button>2</button>
@@ -174,8 +161,7 @@ const Shop = () => {
           </main>
         </div>
       </section>
-
-      <Footer />
+    <Footer />
     </>
   );
 };

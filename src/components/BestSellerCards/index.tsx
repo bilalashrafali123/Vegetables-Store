@@ -3,7 +3,6 @@ import "./index.scss";
 
 const BestSellerCards = () => {
   return (
-    <>
       <div className="product-card">
         <div className="product-card__image">
           <img src="/src/best-product-1.jpg" alt="Organic Tomato" />
@@ -23,8 +22,7 @@ const BestSellerCards = () => {
           </button>
         </div>
       </div>
-    </>
-  );
+    );
 };
 
 export default BestSellerCards;

@@ -27,8 +27,7 @@ const TestimonialSection = () => {
             <FaQuoteRight className="quote-icon" />
           </div>
         </div>
-
-        <div className="testimonial-card">
+         <div className="testimonial-card">
           <p className="text">
             Lorem Ipsum is simply dummy text of the printing Ipsum has been the
             industry's standard dummy text ever since the 1500s,

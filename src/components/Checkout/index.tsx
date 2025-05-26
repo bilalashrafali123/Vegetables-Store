@@ -82,7 +82,6 @@ const Checkout = () => {
               />
             </div>
           </form>
-
           <div className="table-section">
             <table className="table">
               <thead>

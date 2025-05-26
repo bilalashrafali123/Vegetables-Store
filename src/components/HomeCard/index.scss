@@ -2,7 +2,6 @@
   max-width: 1320px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 1rem;
 }
 
 .cards {
@@ -11,6 +10,7 @@
   justify-content: space-between;
   gap: 2rem;
   margin-top: 60px;
+  height: 500px;
 }
 .card-1 {
   border: 1px solid black;
@@ -27,6 +27,7 @@
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s;
+  
 
   &:hover {
     transform: translateY(-5px);
@@ -39,35 +40,43 @@
   }
 
   .label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
     width: 80%;
+    height: 150px; 
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 0 1rem;
     border-radius: 15px;
-
+    margin-top: 20px;
+  
     p {
       margin: 0;
       font-weight: 600;
     }
-
+  
     strong {
       font-size: 1.2rem;
     }
-
+  
     &.green {
       background-color: #c5e86c;
       color: #1b1b1b;
     }
-
+  
     &.grey {
       background-color: #3a4a4f;
       color: #fff;
     }
-
+  
     &.orange {
       background-color: #fcb941;
       color: #1b1b1b;
     }
   }
+  
 }
 
 @media (max-width: 991px) {

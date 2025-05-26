@@ -37,7 +37,6 @@ const Home = () => {
       <div className="container">
         <OrganicHead />
       </div>
-     
       <div className="products-section">
       <div className="cards-wrapper">
         <OrganicProducts />
@@ -53,14 +52,10 @@ const Home = () => {
       <div className="container">
         <HomeCard />
       </div>
-      
       <div className="container">
-      <VegetableProduct />
+      <VegetableProduct title="Fresh Organic Vegetables" />
     </div>
-      
-
-       
-      <Banner />
+    <Banner />
       <BestSellerText />
       <div className="container">
         <div className="bestcards-wrapper">
@@ -76,12 +71,8 @@ const Home = () => {
       <RatingCards />
       <TestimonialText />
       <Testimonial />
-     
       <Footer />
-    
-
-    
-    </>
+      </>
   );
 };
 

@@ -11,7 +11,6 @@ const HomeCard = () => {
             <strong>20% OFF</strong>
           </div>
         </div>
-
         <div className="card">
           <img src="/src/featur-2.jpg" alt="Tasty Fruits" />
           <div className="label grey">
@@ -19,7 +18,6 @@ const HomeCard = () => {
             <strong>Free Delivery</strong>
           </div>
         </div>
-
         <div className="card">
           <img src="/src/featur-3.jpg" alt="Exotic Vegetable" />
           <div className="label orange">

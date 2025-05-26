@@ -1,8 +1,15 @@
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .testimonial-text {
   font-size: 24px;
   color: #81c408;
   text-align: center;
   margin-top: 50px;
+  
 }
 
 .testimonial-para {
@@ -10,4 +17,25 @@
   color: #45595b;
   text-align: center;
   margin-top: 20px;
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+
+  button {
+    padding: 5px 25px;
+    border-radius: 20px;
+    color: #81c408;
+    border: 1px solid #FFB524;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+    &:hover {
+      background-color: #f4a300;
+      color: white;
+    }
+  }
 }

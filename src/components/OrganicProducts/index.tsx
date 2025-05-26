@@ -3,8 +3,7 @@ import "./index.scss";
 const OrganicProducts = () => {
   return (
     <div className="products-section">
-      
-      <div className="cards-wrapper">
+    <div className="cards-wrapper">
         <div className="card">
           <div className="card-image">
             <span className="category-badge">Fruits</span>

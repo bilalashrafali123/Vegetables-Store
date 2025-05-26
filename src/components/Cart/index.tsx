@@ -41,7 +41,6 @@ const Cart = () => {
                 <button>X</button>
               </td>
             </tr>
-
             <tr>
               <th scope="row">
                 <div className="table-wrapper">
@@ -59,8 +58,7 @@ const Cart = () => {
                 <button>X</button>
               </td>
             </tr>
-
-            <tr>
+             <tr>
               <th scope="row">
                 <div className="table-wrapper">
                   <img
@@ -79,13 +77,11 @@ const Cart = () => {
             </tr>
           </tbody>
         </table>
-
         <div className="coupon">
           <input type="text" placeholder="Coupon Code" />
           <button>Apply Coupon</button>
         </div>
-
-        <div className="cart-section">
+         <div className="cart-section">
           <div className="cart-background">
             <div className="cart-text-section">
               <h1>Cart Total</h1>
@@ -110,7 +106,6 @@ const Cart = () => {
           </div>
         </div>
       </div>
-
       <Footer />
     </>
   );

@@ -22,7 +22,6 @@ const MidCards = () => {
             <FaLock /> Add to cart
           </button>
         </div>
-
         <div className="midcard-wrapper">
           <div className="midcard">
             <img src="/src/best-product-3.jpg" alt="Banana" />
@@ -40,7 +39,6 @@ const MidCards = () => {
             <FaLock /> Add to cart
           </button>
         </div>
-
         <div className="midcard-wrapper">
           <div className="midcard">
             <img src="/src/best-product-4.jpg" alt="Raspberry" />
@@ -58,7 +56,6 @@ const MidCards = () => {
             <FaLock /> Add to cart
           </button>
         </div>
-
         <div className="midcard-wrapper">
           <div className="midcard">
             <img src="/src/best-product-5.jpg" alt="Apricot" />

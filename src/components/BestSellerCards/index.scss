@@ -41,36 +41,49 @@
   &__content {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    justify-content: center;
+    gap: 0.4rem;
     color: #3b3b3b;
+    height: 100%;
 
     h2 {
       font-size: 1.2rem;
       font-weight: 600;
       white-space: nowrap;
+      margin: 0;
+      line-height: 1.4;
+      text-align: left;
     }
 
     .stars {
       display: flex;
       gap: 0.2rem;
+      font-size: 1rem;
+      margin: 0;
+      justify-content: flex-start;
     }
 
     .price {
       font-size: 1.1rem;
       font-weight: 600;
+      color: #222;
+      text-align: left;
     }
 
     .add-to-cart {
-      display: flex;
+      display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 0.5rem;
-      padding: 0.5rem 1rem;
+      padding: 0.4rem 1rem;
       border: 1px solid gold;
       border-radius: 999px;
       background: transparent;
       color: limegreen;
       font-weight: 600;
+      font-size: 0.95rem;
       cursor: pointer;
+      margin-top: 6px;
 
       &:hover {
         background-color: #e6ffe6;
