@@ -13,7 +13,7 @@ const Login = () => {
     <div className="login-page">
       <div className="container login-container">
         <div className="login-image">
-          <img src="/images/login-veggies.jpg" alt="vegetables" />
+          <img src="https://demo.htmlcodex.com/2824/vegetable-website-template/img/vegetable-item-2.jpg" alt="vegetables" />
         </div>
         <div className="login-form">
           <h2>Login</h2>
