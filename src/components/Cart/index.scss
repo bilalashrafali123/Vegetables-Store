@@ -84,7 +84,10 @@
     width: 415px;
     background-color: #f4f1f1;
     border-radius: 20px;
-    padding: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .cart-text-section {
@@ -92,7 +95,26 @@
 
     h1 {
       font-size: 2rem;
-      padding-bottom: 16px;
+      margin-bottom: 20px;
+    }
+
+    .subtotal {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      color: #45595b;
+
+      h5 {
+        margin: 0;
+        font-weight: 500;
+      }
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 10px 0;
     }
   }
 }
@@ -119,8 +141,7 @@
   cursor: pointer;
   transition: 0.3s ease;
   margin-top: 20px;
-  margin-left: 25px;
-  
+
   &:hover {
     background-color: #f4a300;
     color: white;
@@ -140,18 +161,18 @@
       height: 60px;
     }
   }
-  
+
   .coupon {
     flex-wrap: wrap;
     justify-content: center;
-    
+
     input {
       width: 100%;
       max-width: 300px;
       margin: 10px 0;
       margin-right: 20px;
     }
-    
+
     button {
       width: 100%;
       max-width: 200px;
@@ -169,7 +190,7 @@
     .checkout {
       width: 100%;
       max-width: 300px;
-}
+    }
   }
 }
 
@@ -187,7 +208,10 @@
       display: none;
     }
 
-    tbody, tr, td, th {
+    tbody,
+    tr,
+    td,
+    th {
       display: block;
       width: 100%;
     }
@@ -211,7 +235,6 @@
   .coupon {
     flex-direction: column;
     align-items: center;
-    
 
     input,
     button {

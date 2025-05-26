@@ -19,7 +19,6 @@ const Shop = () => {
 
             <div className="search-box">
               <input type="text" placeholder="keywords" />
-              <div className="icon">🔍</div>
             </div>
 
             <div className="filter-group">

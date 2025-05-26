@@ -104,9 +104,7 @@ const Cart = () => {
               </div>
               <hr />
               <div>
-                <button className="checkout">
-                  Proceed Checkout
-                </button>
+                <button className="checkout">Proceed Checkout</button>
               </div>
             </div>
           </div>
@@ -119,4 +117,3 @@ const Cart = () => {
 };
 
 export default Cart;
- 
