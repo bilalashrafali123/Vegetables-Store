@@ -75,7 +75,7 @@ const Footer = () => {
             <span>Your Site Name</span>, All right reserved.
           </p>
           <p>
-            Designed By <span className="green">HTML Codex</span> Distributed By{" "}
+            Designed By <span className="green">Bilal</span> Distributed By{" "}
             <span className="green">ThemeWagon</span>
           </p>
         </div>
