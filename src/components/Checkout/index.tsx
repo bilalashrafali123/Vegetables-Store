@@ -58,7 +58,6 @@ const Checkout = () => {
               <label htmlFor="email">Email Address *</label>
               <input id="email" className="contact" type="text" />
             </div>
-
             <div className="create-account">
               <input type="checkbox" />
               <a href="#">Create an account</a>
@@ -108,7 +107,6 @@ const Checkout = () => {
                   <td className="table-data">2</td>
                   <td className="table-data">5.98 $</td>
                 </tr>
-
                 <tr>
                   <th scope="row">
                     <div className="table-wrapper">
@@ -123,7 +121,6 @@ const Checkout = () => {
                   <td className="table-data">3</td>
                   <td className="table-data">4.50 $</td>
                 </tr>
-
                 <tr>
                   <th scope="row">
                     <div className="table-wrapper">
@@ -193,45 +190,37 @@ const Checkout = () => {
                   shipped until the funds have cleared in our account.
                 </p>
               </div>
-
               <div className="line-break">
                 <hr />
               </div>
-
               <div className="method">
                 <div className="title">
                   <span className="checkbox" />
                   <span className="text">Check Payments</span>
                 </div>
               </div>
-
               <div className="line-break">
                 <hr />
               </div>
-
               <div className="method">
                 <div className="title">
                   <span className="checkbox" />
                   <span className="text">Cash On Delivery</span>
                 </div>
               </div>
-
               <div className="line-break">
                 <hr />
               </div>
-
-              <div className="method">
+               <div className="method">
                 <div className="title">
                   <span className="checkbox" />
                   <span className="text">Paypal</span>
                 </div>
               </div>
-
-              <div className="line-break">
+               <div className="line-break">
                 <hr />
               </div>
-
-              <button className="place-order">PLACE ORDER</button>
+            <button className="place-order">PLACE ORDER</button>
             </div>
           </div>
         </div>

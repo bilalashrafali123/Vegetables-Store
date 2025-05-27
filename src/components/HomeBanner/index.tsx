@@ -14,8 +14,7 @@ const HomeBanner = () => {
             <button>Submit Now</button>
           </div>
         </div>
-
-        <div className="banner-image">
+         <div className="banner-image">
           <div className="carousel">
             <button className="nav left">❮</button>
             <div className="carousel-content">

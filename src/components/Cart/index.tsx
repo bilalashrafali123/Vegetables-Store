@@ -10,8 +10,7 @@ const Cart = () => {
       <Header />
       <Navbar />
       <ShopBanner title="Cart" title2="Cart" />
-
-      <div className="container">
+     <div className="container">
         <table className="table">
           <thead>
             <tr>

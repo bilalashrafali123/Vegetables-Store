@@ -19,7 +19,6 @@ const Contact = () => {
             the files, add a little code and you're done.
             <span className="highlight"> Download Now.</span>
           </p>
-
           <div className="map-container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.5597094975747!2d67.05119137488269!3d24.947064841787544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb341b4c4180f59%3A0xcb8b11a9be6708cb!2sMARHABA%20GALAXY!5e0!3m2!1sen!2s!4v1748005451869!5m2!1sen!2s"
@@ -31,7 +30,6 @@ const Contact = () => {
               title="Google Map"
             ></iframe>
           </div>
-
           <div className="form-contact">
             <form className="contact-form">
               <input type="text" placeholder="Your Name" />
@@ -39,8 +37,7 @@ const Contact = () => {
               <textarea placeholder="Your Message" />
               <button type="submit">Submit</button>
             </form>
-
-            <div className="contact-info">
+             <div className="contact-info">
               <div className="info-box">
                 <span className="icon">📍</span>
                 <div>

@@ -9,7 +9,6 @@ const Footer = () => {
             <h2 className="logo">Fruitables</h2>
             <p className="tagline">Fresh products</p>
           </div>
-
           <form className="subscribe-form">
             <input type="email" placeholder="Your Email" />
             <button type="submit">Subscribe Now</button>
@@ -32,7 +31,6 @@ const Footer = () => {
             </p>
             <button className="read-more">Read More</button>
           </div>
-
           <div className="section">
             <h3>Shop Info</h3>
             <ul>

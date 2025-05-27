@@ -107,8 +107,7 @@ const ShopDetail = () => {
                 <div className="review">
                   <div className="avatar-date">
                     <i className="fa-regular fa-circle-user"></i>
-
-                    <div className="date-name">
+                     <div className="date-name">
                       <span className="date">April 12, 2024</span>
                       <h3 className="name">Jason Smith</h3>
                     </div>
